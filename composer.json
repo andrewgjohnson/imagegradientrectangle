@@ -1,0 +1,31 @@
+{
+    "name": "andrewgjohnson/imagegradientrectangle",
+    "type": "library",
+    "description": "imagegradientrectangle is a function that will draw a gradient filled rectangle on your PHP GD images",
+    "keywords": [
+        "gd",
+        "graphics",
+        "image",
+        "images"
+    ],
+    "homepage": "https://github.com/andrewgjohnson/imagegradientrectangle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrew G Johnson",
+            "email": "andrew@andrewgjohnson.com",
+            "homepage": "http://www.andrewgjohnson.com/",
+            "role": "Project Lead"
+        }
+    ],
+    "require": {
+        "php": ">=5.0.0",
+        "ext-gd": "*",
+        "andrewgjohnson/imageblendedcolorallocate": "1.*"
+    },
+    "autoload": {
+        "files": [
+            "source/imagegradientrectangle.php"
+        ]
+    }
+}
