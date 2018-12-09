@@ -29,10 +29,9 @@
  * @link      https://github.com/andrewgjohnson/imagegradientrectangle
  */
 
-// include the vendor autoload.php file if it is present, we recommend using it
-if (file_exists('../vendor/autoload.php')) {
-    include_once '../vendor/autoload.php';
-}
+// the imageblendedcolorallocate function is a dependency so we include a copy with
+// this example, if you use Composer you will not need to do this
+require_once 'imageblendedcolorallocate/imageblendedcolorallocate.php';
 
 // include the imagegradientrectangle source if you're not using Composer
 if (file_exists('../source/imagegradientrectangle.php')) {
