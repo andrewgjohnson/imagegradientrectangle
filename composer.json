@@ -1,7 +1,7 @@
 {
     "name": "andrewgjohnson/imagegradientrectangle",
     "type": "library",
-    "description": "imagegradientrectangle is a function that will draw a gradient filled rectangle",
+    "description": "imagegradientrectangle is a function that will draw a gradient filled rectangle on your PHP GD images",
     "keywords": [
         "gd",
         "graphics",

@@ -32,7 +32,7 @@
 if (!function_exists('imagegradientrectangle')) {
     /**
      * Imagegradientrectangle is a function that will draw a gradient filled
-     * rectangle.
+     * rectangle on your PHP GD images.
      *
      * @param resource $image         <p>An image resource, returned by one of the
      *    image creation functions, such as imagecreatetruecolor().</p>

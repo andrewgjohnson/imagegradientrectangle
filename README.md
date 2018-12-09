@@ -9,7 +9,7 @@
 
 ## Description
 
-**imagegradientrectangle** is a function that will draw a gradient filled rectangle.
+**imagegradientrectangle** is a function that will draw a gradient filled rectangle on your PHP GD images.
 
 ## Usage
 
