@@ -29,15 +29,16 @@
  * @link      https://github.com/andrewgjohnson/imagegradientrectangle
  */
 
-// the imageblendedcolorallocate function is a dependency so we include a copy with
-// this example, if you use Composer you will not need to do this
-require_once 'imageblendedcolorallocate/imageblendedcolorallocate.php';
-
-// include the imagegradientrectangle source if you're not using Composer
-if (file_exists('../source/imagegradientrectangle.php')) {
+// include the imagegradientrectangle & imageblendedcolorallocate source if you're
+// not using Composer
+if (
+    file_exists('../source/imagegradientrectangle.php') &&
+    file_exists('imageblendedcolorallocate/imageblendedcolorallocate.php')
+) {
     include_once '../source/imagegradientrectangle.php';
+    include_once 'imageblendedcolorallocate/imageblendedcolorallocate.php';
 } else {
-    die('imagegradientrectangle.php not found');
+    die('Source files not found');
 }
 
 // set the parameters for our image
