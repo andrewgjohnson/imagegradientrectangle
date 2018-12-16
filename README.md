@@ -7,6 +7,8 @@
 [![Packagist Downloads](https://img.shields.io/packagist/dt/andrewgjohnson/imagegradientrectangle.png)](https://packagist.org/packages/andrewgjohnson/imagegradientrectangle/stats)
 [![Issues](https://img.shields.io/github/issues/andrewgjohnson/imagegradientrectangle.png)](https://github.com/andrewgjohnson/imagegradientrectangle/issues)
 
+<p align="center"><a href="https://imagegradientrectangle.org/" title=""><img src="https://imagegradientrectangle.org/documentation/imagegradientrectangle.org/images/avatar.png" alt="" title="" width="400" id="avatar" /></a></p>
+
 ## Description
 
 **imagegradientrectangle** is a function that will draw a gradient filled rectangle on your PHP GD images.
@@ -48,7 +50,7 @@ To use without Composer add an [include](http://php.net/manual/function.include.
     $blue = imagecolorallocate($im, 0x00, 0x00, 0xFF);
     imagegradientrectangle($im, 10, 10, 100, 100, $red, $blue);
 
-There are [other examples](https://github.com/andrewgjohnson/imagegradientrectangle/tree/master/examples) included in the GitHub repository.
+There are [other examples](https://github.com/andrewgjohnson/imagegradientrectangle/tree/master/examples) included in the GitHub repository and on [imagegradientrectangle.org](https://imagegradientrectangle.org/examples/).
 
 ## Help Requests
 
