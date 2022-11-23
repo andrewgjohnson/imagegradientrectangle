@@ -4,22 +4,23 @@ description:  imagegradientrectangle is a function that will draw a gradient fil
 author:       Andrew G. Johnson
 author_email: andrew@andrewgjohnson.com
 email:        andrew@andrewgjohnson.com
-url:          "http://imagegradientrectangle.org"
+url:          "https://imagegradientrectangle.agjgd.org"
 includes_dir: .
-layouts_dir:  documentation/imagegradientrectangle.org/layouts
+layouts_dir:  documentation/imagegradientrectangle.agjgd.org/layouts
 exclude:      [
+               .github,
+               .github/*.md,
+               .github/*.yml,
+               .github/CODEOWNERS,
+               .github/ISSUE_TEMPLATE,
+               .github/ISSUE_TEMPLATE/*.yml,
                CHANGELOG.md,
                CNAME,
-               CODE_OF_CONDUCT.md,
                composer.json,
-               CONTRIBUTING.md,
                documentation/README.md,
                examples/*.php,
                examples/*.ttf,
-               examples/*.txt,
-               ISSUE_TEMPLATE.md,
                LICENSE,
-               PULL_REQUEST_TEMPLATE.md,
                README.md,
                source
               ]
