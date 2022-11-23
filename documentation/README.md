@@ -1,3 +1,3 @@
 # Documentation
 
-The documentation can be viewed on [imagegradientrectangle.org](https://imagegradientrectangle.org/).
+The documentation can be viewed on [imagegradientrectangle.agjgd.org](https://imagegradientrectangle.agjgd.org/).
