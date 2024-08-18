@@ -2,11 +2,10 @@
 
 [![MIT License](https://img.shields.io/badge/license-MIT-0366d6.png?colorB=0366d6&style=flat-square)](https://github.com/andrewgjohnson/imagegradientrectangle/blob/master/LICENSE)
 [![Current Release](https://img.shields.io/github/release/andrewgjohnson/imagegradientrectangle.png?colorB=0366d6&style=flat-square&logoColor=white&logo=github)](https://github.com/andrewgjohnson/imagegradientrectangle/releases)
-[![GitHub Stars](https://img.shields.io/github/stars/andrewgjohnson/imagegradientrectangle.png?colorB=0366d6&style=flat-square&logoColor=white&logo=github)](https://github.com/andrewgjohnson/imagegradientrectangle/stargazers)
 [![Contributors](https://img.shields.io/github/contributors/andrewgjohnson/imagegradientrectangle.png?colorB=0366d6&style=flat-square&logoColor=white&logo=github)](https://github.com/andrewgjohnson/imagegradientrectangle/graphs/contributors)
 [![Packagist Downloads](https://img.shields.io/packagist/dt/andrewgjohnson/imagegradientrectangle.png?colorB=0366d6&style=flat-square&logoColor=white&logo=packagist)](https://packagist.org/packages/andrewgjohnson/imagegradientrectangle/stats)
 [![Issues](https://img.shields.io/github/issues/andrewgjohnson/imagegradientrectangle.png?colorB=0366d6&style=flat-square&logoColor=white&logo=github)](https://github.com/andrewgjohnson/imagegradientrectangle/issues)
-[![Patreon](https://img.shields.io/endpoint.png?url=https%3A%2F%2Fshieldsio-patreon.vercel.app%2Fapi%3Fusername%3Dagjopensource%26type%3Dpatrons&colorB=0366d6&style=flat-square&logoColor=white&logo=patreon)](https://patreon.com/agjopensource)
+[![Patreon](https://imagegradientrectangle.agjgd.org/documentation/imagegradientrectangle.agjgd.org/images/patreon-badge.png)](https://patreon.com/agjopensource)
 
 <p align="center"><a href="https://imagegradientrectangle.agjgd.org/" title=""><img src="https://imagegradientrectangle.agjgd.org/documentation/imagegradientrectangle.agjgd.org/images/avatar.png" alt="" title="" width="400" id="avatar" /></a></p>
 
@@ -16,7 +15,7 @@
 
 [![Patreon - Become a Patron](https://raster.shields.io/badge/Patreon%20-become%20a%20Patron-FD334A.png?style=for-the-badge&logo=patreon&logoColor=FD334A)](https://patreon.com/agjopensource)
 
-**imagegradientrectangle** is an [agjgd.org](https://agjgd.org) project.
+**imagegradientrectangle** is an [agjgd](https://agjgd.org) project.
 
 ## Usage
 
