@@ -7,5 +7,6 @@ nav:       3
 
 # Examples
 
- * [Example: **Basic**](/examples/basic/)
- * [Example: **Alpha**](/examples/alpha/)
+ * [Example One: **Basic**](/examples/basic/)
+ * [Example Two: **Alpha**](/examples/alpha/)
+ * [Example Three: **Horizontal Gradient**](/examples/horizontal-gradient/)

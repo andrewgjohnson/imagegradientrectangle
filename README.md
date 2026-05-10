@@ -39,20 +39,28 @@ To use without Composer add an [include](http://php.net/manual/function.include.
 
     include_once 'source/imagegradientrectangle.php';
 
+### Dependencies
+
+This project has external dependencies. If you use [Composer](https://getcomposer.org/) you will not need to worry as dependencies are handled automatically. If you do not use Composer you will need to manage these dependencies yourself.
+
+#### Dependencies List
+
+ * [**imageblendedcolorallocate**](https://github.com/andrewgjohnson/imageblendedcolorallocate) is a function that will allocate a new blended color based on two existing allocated colors for your PHP GD images *([source](https://raw.githubusercontent.com/andrewgjohnson/imageblendedcolorallocate/1ed92d79a66fd3562af3fc9b71468725a8569db8/source/imageblendedcolorallocate.php))*
+
 ## Examples
 
-    // standard method to draw a red filled rectangle
-    $red = imagecolorallocate($im, 0xFF, 0x00, 0x00);
-    imagefilledrectangle($im, 10, 10, 100, 100, $red);
-
-    // standard method to draw a blue filled rectangle
+    $red  = imagecolorallocate($im, 0xFF, 0x00, 0x00);
     $blue = imagecolorallocate($im, 0x00, 0x00, 0xFF);
+
+    // Standard method to draw solid filled rectangles
+    imagefilledrectangle($im, 10, 10, 100, 100, $red);
     imagefilledrectangle($im, 10, 10, 100, 100, $blue);
 
-    // this will draw a red-to-blue gradient filled rectangle
-    $red = imagecolorallocate($im, 0xFF, 0x00, 0x00);
-    $blue = imagecolorallocate($im, 0x00, 0x00, 0xFF);
+    // This will draw a red-to-blue gradient filled rectangle (vertical gradient)
     imagegradientrectangle($im, 10, 10, 100, 100, $red, $blue);
+
+    // This will draw a red-to-blue gradient filled rectangle (horizontal gradient)
+    imagegradientrectangle($im, 10, 10, 100, 100, $red, $blue, true);
 
 There are [other examples](https://github.com/andrewgjohnson/imagegradientrectangle/tree/master/examples) included in the GitHub repository and on [imagegradientrectangle.agjgd.org](https://imagegradientrectangle.agjgd.org/examples/).
 
@@ -64,7 +72,7 @@ If you discover a bug please [enter an issue](https://github.com/andrewgjohnson/
 
 ## Contributing
 
-Please read our [contributing guidelines](https://github.com/andrewgjohnson/imagegradientrectangle/blob/master/CONTRIBUTING.md) if you want to contribute.
+Please read our [contributing guidelines](https://github.com/andrewgjohnson/imagegradientrectangle/blob/master/.github/CONTRIBUTING.md) if you want to contribute.
 
 You can contribute financially by becoming a [patron](https://patreon.com/agjopensource) at [patreon.com/agjopensource](https://patreon.com/agjopensource) to support imagegradientrectangle and [other agjgd.org projects](https://agjgd.org/projects/).
 
