@@ -6,12 +6,12 @@ permalink: /examples/alpha/
 
 # Example: Alpha
 
-[**example_alpha.php**](https://github.com/andrewgjohnson/imagegradientrectangle/blob/master/examples/example_alpha.php)
+[**02-alpha.php**](https://github.com/andrewgjohnson/imagegradientrectangle/blob/master/examples/02-alpha.php)
 
-<pre><code>{% include examples/example_alpha.php %}</code></pre>
+<pre><code>{% include examples/02-alpha.php %}</code></pre>
 
 ## Expected Output
 
-[**example_alpha.png**](https://github.com/andrewgjohnson/imagegradientrectangle/blob/master/examples/example_alpha.png)
+[**02-alpha.png**](https://github.com/andrewgjohnson/imagegradientrectangle/blob/master/examples/02-alpha.png)
 
-![Example: Alpha](/examples/example_alpha.png "Example: Alpha")
+![Example: Alpha](/examples/02-alpha.png "Example: Alpha")
