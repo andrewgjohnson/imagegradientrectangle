@@ -18,4 +18,4 @@ This project has external dependencies. If you use [Composer](https://getcompose
 
 ### Dependencies List
 
- * [**imageblendedcolorallocate**](https://github.com/andrewgjohnson/imageblendedcolorallocate) is a function that will allocate a new blended color based on two existing allocated colors for your PHP GD images *([source](https://raw.githubusercontent.com/andrewgjohnson/imageblendedcolorallocate/1ed92d79a66fd3562af3fc9b71468725a8569db8/source/imageblendedcolorallocate.php))*
+ * [**imageblendedcolorallocate**](https://github.com/andrewgjohnson/imageblendedcolorallocate) is a function that will allocate a new blended color based on two existing allocated colors for your PHP GD images *([source](https://raw.githubusercontent.com/andrewgjohnson/imageblendedcolorallocate/c7148a87ae0557a670ef4432aa90a8f7e9d3395e/source/imageblendedcolorallocate.php))*

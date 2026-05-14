@@ -29,4 +29,48 @@ class ImagegradientrectangleTest extends TestCase
     {
         $this->assertTrue(function_exists('imageblendedcolorallocate'));
     }
+
+    public function testVerticalGradientReturnsTrue(): void
+    {
+        $image = imagecreatetruecolor(100, 100);
+        $red   = imagecolorallocate($image, 0xFF, 0x00, 0x00);
+        $blue  = imagecolorallocate($image, 0x00, 0x00, 0xFF);
+
+        $this->assertTrue(imagegradientrectangle($image, 10, 10, 90, 90, $red, $blue));
+    }
+
+    public function testHorizontalGradientReturnsTrue(): void
+    {
+        $image = imagecreatetruecolor(100, 100);
+        $red   = imagecolorallocate($image, 0xFF, 0x00, 0x00);
+        $blue  = imagecolorallocate($image, 0x00, 0x00, 0xFF);
+
+        $this->assertTrue(imagegradientrectangle($image, 10, 10, 90, 90, $red, $blue, true));
+    }
+
+    public function testZeroHeightVerticalGradientReturnsFalse(): void
+    {
+        $image = imagecreatetruecolor(100, 100);
+        $red   = imagecolorallocate($image, 0xFF, 0x00, 0x00);
+        $blue  = imagecolorallocate($image, 0x00, 0x00, 0xFF);
+
+        $this->assertFalse(imagegradientrectangle($image, 10, 50, 90, 50, $red, $blue));
+    }
+
+    public function testZeroWidthHorizontalGradientReturnsFalse(): void
+    {
+        $image = imagecreatetruecolor(100, 100);
+        $red   = imagecolorallocate($image, 0xFF, 0x00, 0x00);
+        $blue  = imagecolorallocate($image, 0x00, 0x00, 0xFF);
+
+        $this->assertFalse(imagegradientrectangle($image, 50, 10, 50, 90, $red, $blue, true));
+    }
+
+    public function testSolidFillReturnsTrue(): void
+    {
+        $image = imagecreatetruecolor(100, 100);
+        $red   = imagecolorallocate($image, 0xFF, 0x00, 0x00);
+
+        $this->assertTrue(imagegradientrectangle($image, 10, 10, 90, 90, $red));
+    }
 }

@@ -35,7 +35,7 @@
         ]
     },
     "scripts": {
-        "build": "curl -o examples/dependencies/imageblendedcolorallocate.php https://raw.githubusercontent.com/andrewgjohnson/imageblendedcolorallocate/1ed92d79a66fd3562af3fc9b71468725a8569db8/source/imageblendedcolorallocate.php",
+        "build": "curl -o examples/dependencies/imageblendedcolorallocate.php https://raw.githubusercontent.com/andrewgjohnson/imageblendedcolorallocate/c7148a87ae0557a670ef4432aa90a8f7e9d3395e/source/imageblendedcolorallocate.php",
         "lint": "@php vendor/bin/phpcs",
         "lint:fix": "@php vendor/bin/phpcbf",
         "phpunit": "@php vendor/bin/phpunit",
