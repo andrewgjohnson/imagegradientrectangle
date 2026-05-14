@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Imageblendedcolorallocate v1.1.1
+ * Imageblendedcolorallocate v1.1.2
  *
  * Copyright (c) 2018-2026 Andrew G. Johnson <andrew@andrewgjohnson.com>
  * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
@@ -57,8 +57,8 @@ if (!function_exists('imageblendedcolorallocate')) {
      * of PHP), returned by one of the image creation functions, such as imagecreatetruecolor().
      * @param int               $color1        A color identifier created with imagecolorallocate().
      * @param int               $color2        A color identifier created with imagecolorallocate().
-     * @param double            $opacityColor1 A value between 0 and 1. 1 indicates completely opaque while 0 indicates
-     * completely transparent.
+     * @param float             $opacityColor1 The blend ratio for color1, between 0 and 1. At 1 the result is entirely
+     * color1; at 0 it is entirely color2; 0.5 (the default) produces an even blend.
      *
      * @return mixed Returns a color identifier or FALSE if the allocation failed.
      */
@@ -68,6 +68,11 @@ if (!function_exists('imageblendedcolorallocate')) {
         $color2,
         $opacityColor1 = 0.5
     ) {
+        // Return false if either color identifier is invalid.
+        if ($color1 === false || $color2 === false) {
+            return false;
+        }
+
         // Calculate $opacityColor2 based on $opacityColor1.
         if ($opacityColor1 >= 0 && $opacityColor1 <= 1) {
             $opacityColor2 = 1 - $opacityColor1;
@@ -76,39 +81,25 @@ if (!function_exists('imageblendedcolorallocate')) {
             $opacityColor2 = 0.5;
         }
 
-        // Calculate $red for the color identifier.
-        $redColor1 = ($color1 >> 16) & 0xFF;
-        $redColor2 = ($color2 >> 16) & 0xFF;
+        // Extract RGBA components via imagecolorsforindex() to support both true color and palette images.
+        $componentsColor1 = imagecolorsforindex($image, $color1);
+        $componentsColor2 = imagecolorsforindex($image, $color2);
 
-        $red  = $redColor1 * $opacityColor1;
-        $red += $redColor2 * $opacityColor2;
-        $red  = round($red);
+        // Calculate $red for the color identifier.
+        $red = (int)round(($componentsColor1['red'] * $opacityColor1) + ($componentsColor2['red'] * $opacityColor2));
 
         // Calculate $green for the color identifier.
-        $greenColor1 = ($color1 >> 8) & 0xFF;
-        $greenColor2 = ($color2 >> 8) & 0xFF;
-
-        $green  = $greenColor1 * $opacityColor1;
-        $green += $greenColor2 * $opacityColor2;
-        $green  = round($green);
+        $green = (int)round(
+            ($componentsColor1['green'] * $opacityColor1) + ($componentsColor2['green'] * $opacityColor2)
+        );
 
         // Calculate $blue for the color identifier.
-        $blueColor1 = $color1 & 0xFF;
-        $blueColor2 = $color2 & 0xFF;
-
-        $blue  = $blueColor1 * $opacityColor1;
-        $blue += $blueColor2 * $opacityColor2;
-        $blue  = round($blue);
+        $blue = (int)round(($componentsColor1['blue'] * $opacityColor1) + ($componentsColor2['blue'] * $opacityColor2));
 
         // Calculate $alpha for the color identifier.
-        $alphaColor1 = imagecolorsforindex($image, $color1);
-        $alphaColor1 = $alphaColor1['alpha'];
-        $alphaColor2 = imagecolorsforindex($image, $color2);
-        $alphaColor2 = $alphaColor2['alpha'];
-
-        $alpha  = $alphaColor1 * $opacityColor1;
-        $alpha += $alphaColor2 * $opacityColor2;
-        $alpha  = round($alpha);
+        $alpha = (int)round(
+            ($componentsColor1['alpha'] * $opacityColor1) + ($componentsColor2['alpha'] * $opacityColor2)
+        );
 
         // If $alpha is greater than zero return an RGBA color identifier otherwise return an RGB color identifier.
         if ($alpha > 0) {

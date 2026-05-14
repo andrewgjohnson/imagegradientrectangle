@@ -42,8 +42,8 @@ if (
 $width           = 600;
 $height          = 300;
 $offset          = round($width / 10);
-$squareWidth     = $offset * 2;
-$squareHeight    = $height - ($offset * 2);
+$rectangleWidth  = $offset * 2;
+$rectangleHeight = $height - ($offset * 2);
 
 // Create our image
 $im              = imagecreatetruecolor($width, $height);
@@ -61,26 +61,26 @@ imagefilledrectangle(
     $im,
     $offset,
     $offset,
-    $offset + $squareWidth,
-    $offset + $squareHeight,
+    $offset + $rectangleWidth,
+    $offset + $rectangleHeight,
     $red
 );
 
 imagefilledrectangle(
     $im,
-    ($offset * 2) + $squareWidth,
+    ($offset * 2) + $rectangleWidth,
     $offset,
-    ($offset + $squareWidth) * 2,
-    $offset + $squareHeight,
+    ($offset + $rectangleWidth) * 2,
+    $offset + $rectangleHeight,
     $blue
 );
 
 imagegradientrectangle(
     $im,
-    ($offset * 3) + ($squareWidth * 2),
+    ($offset * 3) + ($rectangleWidth * 2),
     $offset,
-    ($offset + $squareWidth) * 3,
-    $offset + $squareHeight,
+    ($offset + $rectangleWidth) * 3,
+    $offset + $rectangleHeight,
     $red,
     $blue,
     true

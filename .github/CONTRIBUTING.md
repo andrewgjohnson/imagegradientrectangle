@@ -1,6 +1,5 @@
 # Contributing Guidelines
 
-
 ## Contribute Code
 
 ### Coding Conventions
@@ -13,7 +12,7 @@ Run the following command to check your changes against our linters and unit tes
 
 #### PHP
 
-The project uses the [PHP_CodeSniffer](https://github.com/squizlabs/php_codesniffer) linter tool to enforce coding standards in the [PHP source](https://imagegradientrectangle.agjgd.org/source/), [unit tests](https://github.com/andrewgjohnson/imagegradientrectangle/tree/master/tests) and [examples](https://imagegradientrectangle.agjgd.org/examples/). The project uses PHP_CodeSniffer [PSR-12](https://www.php-fig.org/psr/psr-12/) ruleset defined in the [PHP_CodeSniffer configuration file](https://github.com/andrewgjohnson/imagegradientrectangle/blob/master/phpcs.xml.dist). Run this command to test all code changes:
+The project uses the [PHP_CodeSniffer](https://github.com/squizlabs/php_codesniffer) linter tool to enforce coding standards in the [PHP source](https://imagegradientrectangle.agjgd.org/source/), [unit tests](https://github.com/andrewgjohnson/imagegradientrectangle/tree/master/tests) and [examples](https://imagegradientrectangle.agjgd.org/examples/). The project uses the PHP_CodeSniffer [PSR-12](https://www.php-fig.org/psr/psr-12/) ruleset defined in the [PHP_CodeSniffer configuration file](https://github.com/andrewgjohnson/imagegradientrectangle/blob/master/phpcs.xml.dist). Run this command to test all code changes:
 
     composer lint
 
@@ -29,7 +28,7 @@ The project uses [PHPUnit](https://phpunit.de/) framework to run unit tests. The
 
 ### Online Documentation
 
-The project’s online documentation is available at [imagegradientrectangle.agjgd.org](https://imagegradientrectangle.agjgd.org/). Please ensure the documentation is updated along with any code changes. All of the files used to generate the documentation are in the [`documentation` folder](https://github.com/andrewgjohnson/imagegradientrectangle/blob/master/documentation/). [The website](https://imagegradientrectangle.agjgd.org/) is powered by [GitHub Pages](https://pages.github.com/) which uses [Jekyll](https://jekyllrb.com/). Run this command to test the online documentation website locally if you have Jekyll installed:
+The project’s online documentation is available at [imagegradientrectangle.agjgd.org](https://imagegradientrectangle.agjgd.org/). Please ensure the documentation is updated along with any code changes. All of the files used to generate the documentation are in the [`documentation` folder](https://github.com/andrewgjohnson/imagegradientrectangle/tree/master/documentation/). [The website](https://imagegradientrectangle.agjgd.org/) is powered by [GitHub Pages](https://pages.github.com/) which uses [Jekyll](https://jekyllrb.com/). Run this command to test the online documentation website locally if you have Jekyll installed:
 
     jekyll serve
 
