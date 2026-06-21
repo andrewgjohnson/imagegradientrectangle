@@ -1,8 +1,9 @@
 ---
-layout:    layout
-title:     imagegradientrectangle&#58; License
+layout:    default
+title:     License • imagegradientrectangle
 permalink: /license/
-nav:       5
+nav_order: 5
+nav_text:  License
 ---
 
 # License

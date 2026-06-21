@@ -1,16 +1,19 @@
 ---
-layout:    layout
-title:     imagegradientrectangle&#58; Source
-permalink: /source/
-nav:       2
+layout:    default
+title:     PHP Source • imagegradientrectangle
+permalink: /source/php/
 ---
 
-# Source
+# PHP Source
 
-[**imagegradientrectangle.php**](https://github.com/andrewgjohnson/imagegradientrectangle/blob/master/source/imagegradientrectangle.php)
+You can view the full source code for [**imagegradientrectangle.php**](https://github.com/andrewgjohnson/imagegradientrectangle/blob/master/source/imagegradientrectangle.php) below.
+
+## [imagegradientrectangle.php](https://github.com/andrewgjohnson/imagegradientrectangle/blob/master/source/imagegradientrectangle.php)
 
 {% capture source %}{% include source/imagegradientrectangle.php %}{% endcapture %}
-<pre><code>{{ source | replace: '<', '&lt;' | replace: '>', '&gt;' }}</code></pre>
+<div class="highlight">
+    <pre><code class="language-php">{{ source | replace: '<', '&lt;' | replace: '>', '&gt;' }}</code></pre>
+</div>
 
 ## Dependencies
 

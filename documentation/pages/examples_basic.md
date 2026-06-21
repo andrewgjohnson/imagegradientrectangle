@@ -1,6 +1,6 @@
 ---
-layout:    layout
-title:     imagegradientrectangle&#58; Examples&#58; Basic
+layout:    default
+title:     Basic • Examples • imagegradientrectangle
 permalink: /examples/basic/
 ---
 

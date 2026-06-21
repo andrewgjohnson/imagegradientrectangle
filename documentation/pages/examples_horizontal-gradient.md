@@ -1,6 +1,6 @@
 ---
-layout:    layout
-title:     imagegradientrectangle&#58; Examples&#58; Horizontal Gradient
+layout:    default
+title:     Horizontal Gradient • Examples • imagegradientrectangle
 permalink: /examples/horizontal-gradient/
 ---
 

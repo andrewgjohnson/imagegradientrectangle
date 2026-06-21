@@ -37,7 +37,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
  * Added Patrons shields.io badge to README.md
  * Enabled GitHub [discussions area](https://github.com/andrewgjohnson/imagegradientrectangle/discussions) and now recommending it over StackOverflow
  * Removed `ISSUE_TEMPLATE.md` file for our single issue template and replaced with `ISSUE_TEMPLATE` folder to separate bug reports & feature requests within GitHub [issues](https://github.com/andrewgjohnson/imagegradientrectangle/issues)
- * Updated [avatar image](https://imagegradientrectangle.agjgd.org/documentation/imagegradientrectangle.agjgd.org/images/avatar.png)
+ * Updated [avatar image](https://imagegradientrectangle.agjgd.org/documentation/images/avatar.png)
  * Moved all Twitter activity for all [agjgd projects](https://agjgd.org/projects/) (including imagegradientrectangle) to the [@agjgdphp Twitter account](https://twitter.com/agjgdphp) as there were issues with the individual accounts being frozen
  * Changed documentation website to [imagegradientrectangle.agjgd.org](https://imagegradientrectangle.agjgd.org)
  * Updated copyright years to 2022
