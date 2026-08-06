@@ -15,7 +15,7 @@
  * COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
  * OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  *
- * PHP version 5
+ * PHP version 8
  *
  * @category  Andrewgjohnson
  * @package   Imagegradientrectangle
@@ -25,17 +25,11 @@
  * @link      https://github.com/andrewgjohnson/imagegradientrectangle
  */
 
-// Include the imagegradientrectangle (and its dependencies’) source if you’re not using Composer
-if (
-    file_exists('../source/imagegradientrectangle.php')
-    && file_exists('dependencies/imageblendedcolorallocate.php')
-) {
-    require_once '../source/imagegradientrectangle.php';
-    require_once 'dependencies/imageblendedcolorallocate.php';
+// Load imagegradientrectangle (and the AgjGd class it wraps) via Composer’s autoloader
+if (file_exists('../vendor/autoload.php')) {
+    require_once '../vendor/autoload.php';
 } elseif (!function_exists('imagegradientrectangle')) {
-    die('imagegradientrectangle not found');
-} elseif (!function_exists('imageblendedcolorallocate')) {
-    die('imageblendedcolorallocate not found');
+    die('imagegradientrectangle not found; run composer install');
 }
 
 // set the parameters for our image

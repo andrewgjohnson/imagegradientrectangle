@@ -4,12 +4,22 @@ All notable changes to the [imagegradientrectangle project](https://github.com/a
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [v2.0.0](https://github.com/andrewgjohnson/imagegradientrectangle/releases/tag/v2.0.0) (August 5, 2026)
+
+imagegradientrectangle is now part of [AgjGd](https://agjgd.org). The implementation has moved to the `\AndrewGJohnson\AgjGd` class and this package is now a thin reverse-compatibility wrapper around it.
+
+ * **Breaking:** raised the minimum PHP version from 5.0 to 8.0
+ * **Breaking:** replaced the dependency on [`andrewgjohnson/imageblendedcolorallocate`](https://packagist.org/packages/andrewgjohnson/imageblendedcolorallocate) with [`andrewgjohnson/agjgd`](https://packagist.org/packages/andrewgjohnson/agjgd); the `imagegradientrectangle()` implementation now lives in the `\AndrewGJohnson\AgjGd` class, which blends colors internally
+ * Changed the global `imagegradientrectangle()` function into a deprecated reverse-compatibility wrapper that forwards to `\AndrewGJohnson\AgjGd::imagegradientrectangle()`; please use the class in new code
+ * Removed the `examples/dependencies` folder and the `composer build` script that populated it as the examples now load everything through Composer’s autoloader
+ * Updated the examples and documentation to load the class through Composer’s autoloader
+
 ## [v1.1.1](https://github.com/andrewgjohnson/imagegradientrectangle/releases/tag/v1.1.1) (May 13, 2026)
  * Changed the font in the examples from Arial to [Noto Sans](https://fonts.google.com/noto/specimen/Noto+Sans) which uses the [SIL OFL 1.1](https://openfontlicense.org/open-font-license-official-text/)
  * Updated documentation website to replace deprecated `hljs.initHighlighting()` call with `hljs.highlightAll()` and removed obsolete Google Analytics script
  * Renamed `$squareWidth` and `$squareHeight` to `$rectangleWidth` and `$rectangleHeight` in all examples
  * Removed the pass-by-reference `&` from the `$image` parameter in `imagegradientrectangle()` and updated the `@return` type annotation from `mixed` to `bool`
- * Expanded PHPUnit test coverage with tests for vertical and horizontal gradient drawing, zero-dimension edge cases, and the solid-fill fallback path
+ * Expanded PHPUnit test coverage with tests for vertical and horizontal gradient drawing, zero-dimension edge cases and the solid-fill fallback path
  * Removed references to Gitter and Google+ from the [Code of Conduct](https://github.com/andrewgjohnson/imagegradientrectangle/blob/master/.github/CODE_OF_CONDUCT.md)
  * Fixed broken links and typos across [README.md](https://github.com/andrewgjohnson/imagegradientrectangle/blob/master/README.md) and [CONTRIBUTING.md](https://github.com/andrewgjohnson/imagegradientrectangle/blob/master/.github/CONTRIBUTING.md)
  * Added `.claude` directory to [.gitignore](https://github.com/andrewgjohnson/imagegradientrectangle/blob/master/.gitignore)

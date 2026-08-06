@@ -13,6 +13,10 @@
 
 **imagegradientrectangle** is a function that will draw a gradient filled rectangle on your PHP GD images.
 
+As of **v2.0.0** imagegradientrectangle is part of [**AgjGd**](https://agjgd.org). The implementation now lives in the `\AndrewGJohnson\AgjGd` class provided by the [`andrewgjohnson/agjgd`](https://packagist.org/packages/andrewgjohnson/agjgd) package, and this package provides the standalone `imagegradientrectangle()` function as a thin reverse-compatibility wrapper around it.
+
+New code should call [`\AndrewGJohnson\AgjGd::imagegradientrectangle()`](https://agjgd.org/methods/imagegradientrectangle/) directly.
+
 [![Patreon - Become a Patron](https://raster.shields.io/badge/Patreon%20-become%20a%20Patron-FD334A.png?style=for-the-badge&logo=patreon&logoColor=FD334A)](https://patreon.com/agjopensource)
 
 **imagegradientrectangle** is an [agjgd](https://agjgd.org) project.
@@ -48,21 +52,20 @@ Either run this command:
 
 or add this to the `require` section of your composer.json file:
 
-    "andrewgjohnson/imagegradientrectangle": "1.*"
+    "andrewgjohnson/imagegradientrectangle": "^2.0"
+
+This package requires PHP 8.0 or newer, the [GD extension](https://www.php.net/manual/book.image.php) and the [`andrewgjohnson/agjgd`](https://packagist.org/packages/andrewgjohnson/agjgd) package, which Composer installs automatically.
 
 ### Without Composer
 
-To use without Composer add an [include](https://www.php.net/manual/en/function.include.php) to the [`imagegradientrectangle.php` source file](https://raw.githubusercontent.com/andrewgjohnson/imagegradientrectangle/master/source/imagegradientrectangle.php).
+Because `imagegradientrectangle()` now forwards to the `\AndrewGJohnson\AgjGd` class, you need both this wrapper and AgjGd. Composer is the recommended way to install them, but you can also require both source files directly:
 
-    include_once 'source/imagegradientrectangle.php';
+    require_once 'path/to/agjgd/source/AndrewGJohnson/AgjGd.php';
+    require_once 'source/imagegradientrectangle.php';
 
 ### Dependencies
 
-This project has external dependencies. If you use [Composer](https://getcomposer.org/) you will not need to worry as dependencies are handled automatically. If you do not use Composer you will need to manage these dependencies yourself.
-
-#### Dependencies List
-
- * [**imageblendedcolorallocate**](https://github.com/andrewgjohnson/imageblendedcolorallocate) is a function that will allocate a new blended color based on two existing allocated colors for your PHP GD images *([source](https://raw.githubusercontent.com/andrewgjohnson/imageblendedcolorallocate/c7148a87ae0557a670ef4432aa90a8f7e9d3395e/source/imageblendedcolorallocate.php))*
+As of v2.0.0 this project has a single dependency, [`andrewgjohnson/agjgd`](https://packagist.org/packages/andrewgjohnson/agjgd), which provides the `\AndrewGJohnson\AgjGd` class this wrapper forwards to. Prior to v2.0.0 this project depended on [imageblendedcolorallocate](https://github.com/andrewgjohnson/imageblendedcolorallocate), which AgjGd now supersedes.
 
 ## Help Requests
 

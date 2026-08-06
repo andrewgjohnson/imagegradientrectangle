@@ -14,7 +14,7 @@
  * OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-namespace AndrewGJohnson\AgjGd\Tests;
+namespace AndrewGJohnson\Imagegradientrectangle\Tests;
 
 use PHPUnit\Framework\TestCase;
 
@@ -27,7 +27,7 @@ class ImagegradientrectangleTest extends TestCase
 
     public function testDependenciesExist(): void
     {
-        $this->assertTrue(function_exists('imageblendedcolorallocate'));
+        $this->assertTrue(class_exists('AndrewGJohnson\AgjGd'));
     }
 
     public function testVerticalGradientReturnsTrue(): void

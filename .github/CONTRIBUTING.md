@@ -32,12 +32,6 @@ The project’s online documentation is available at [imagegradientrectangle.agj
 
     jekyll serve
 
-### Build Script for Dependencies
-
-The project’s dependencies are stored in the [`examples/dependencies` folder](https://github.com/andrewgjohnson/imagegradientrectangle/tree/master/examples/dependencies) to allow the examples to work without Composer. Run this command to build the dependencies:
-
-    composer build
-
 If you are on Ruby 4.0 or later you may encounter a gem conflict between `jekyll-remote-theme` and `jekyll-sass-converter`. If so, first create a link inside the project root pointing to the theme repository's layouts (this only needs to be done once).
 
 On Windows:
